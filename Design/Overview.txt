@@ -1,0 +1,52 @@
+This is a second attempt at an emulated computing library for games.
+
+The idea is that players would craft computing elements and join them up to do useful
+computery things.
+
+There are many open problems to solve though.  How much detail do you allow the player?
+Designing an entire cpu out of gates would obviously eat tremendous resources that the
+game will need for other things, as well as being too difficult for the average player.
+
+My first approach was to modularise computer stuff and just have them communicate.  I
+had a very x86ish instruction set, but quickly ran into problems with complexity when
+dealing with arguments and stack stuff.
+
+I think starting over I might do a 6502ish cpu.  These are very simple and should be
+much easier for a gamer to program.  There are vast hours of 6502 related content on
+youtube and such, so players should be able to make great things with it.
+
+Players will likely share code libraries (assuming I ever finish this) for handy things.
+Maybe I'll have a way to do that with steam workshop.
+
+If I want to do any advancements to the in-game character's skill at fabrication, I could
+add things like mul / div instructions, or multiple cores, faster clock etc...
+
+In my survival game, my in-game player characters are assumed to have a basic modern
+dumbass level knowledge.  They know that cpus and gpus are useful but have no idea how
+they work or how to make them.
+
+This means that some stepping stones in tech advancement might be skipped unless they 
+are easier to make.  Like in display tech there might be no need to research cathode ray
+tubes, so the game might jump straight to LCD.
+
+Simplified IO
+	No timing assgoblinry with memory etc
+
+Parts
+	CPU
+		Static core
+		ALU
+		Registers		
+	Timer / Clock
+	Ram
+		Memory Manager hardware?
+		Would allow bank switching etc
+	Rom
+	GPU
+	Display
+	KeyBoard
+	Mouse
+	Networking
+	Rom Programmer
+	Non Volatile Storage
+		Tape, floppy, HD, SSD etc

@@ -1,2 +1,2 @@
-# GameCPU
-Another attempt at an emulated cpu to run player generated code in games
+# GameCompute
+Another attempt at an emulated computing library for use in games
